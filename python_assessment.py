@@ -47,7 +47,7 @@ if __name__ == "__main__":
     s = 'The quick brown fox said “hello Mr lazy dog”.'
     print(f"Capital Letter: {capitalLetter(s)}")
     print(f"Full Stop: {fullStop(s)}")
-    print(f"Qoutation Marks: {qMarks(s)}")
+    print(f"Quotation Marks: {qMarks(s)}")
     print(f"Contains Number: {containsNumber(s)}")
     isValid(s)
     
