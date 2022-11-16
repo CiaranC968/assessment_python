@@ -6,3 +6,5 @@ String has an even number of quotation marks.
 String ends with one of the following sentence termination characters: ., ? or !
 String has no period characters other than the last character.
 Numbers below 13 are spelled out (”one”, “two”, &quot;three”, etc…).
+
+Got all tests passed but still a problem with the containsNumber method 
