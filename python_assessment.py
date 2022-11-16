@@ -43,7 +43,7 @@ def isValid(s):
 
 if __name__ == "__main__":
    
-    
+    #Main code for testing String
     s = 'The quick brown fox said “hello Mr lazy dog”.'
     print(f"Capital Letter: {capitalLetter(s)}")
     print(f"Full Stop: {fullStop(s)}")
