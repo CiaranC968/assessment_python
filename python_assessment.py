@@ -6,7 +6,8 @@ def capitalLetter(s):
     if(s[0].isupper()):
         return True
     else:
-        False
+        return False
+
 
 #checks if the last index of the string is a ., ? or !
 #also checks if there is more than 1 full stop
@@ -14,8 +15,8 @@ def fullStop(s):
     if '.' not in s[0:-1]:
         if(s[-1] == '.' or '?' or '!'):
             return True
-    else:
-        return False
+        else:
+            return False
     
 def qMarks(s):
     #adds up the number of " in the String and divides it by 2
@@ -25,9 +26,11 @@ def qMarks(s):
     else:
         return False
     
-def containsNumber(s):
-    return bool(re.search('r,0[1-9|1[0-2]', s))
-
+    
+def containsNumber (s):
+    numbers = bool(re.search('r, [1-9]|1[0-2]', s))
+    return numbers
+    
          
 #Checks if the string is valid by calling several functions
 def isValid(s):
@@ -39,8 +42,9 @@ def isValid(s):
 
 
 if __name__ == "__main__":
+   
     
-    s = 'the quick brown fox said “hello Mr lazy dog".'
+    s = 'One lazy dog is too few, 3 is too many.'
     print(f"Capital Letter: {capitalLetter(s)}")
     print(f"Full Stop: {fullStop(s)}")
     print(f"Qoutation Marks: {qMarks(s)}")
