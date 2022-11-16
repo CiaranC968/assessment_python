@@ -1,0 +1,18 @@
+#This checks if the first index of 
+#string is a capital Letter
+def cap_Letter(s):
+    if(s[0].isupper()):
+        return True
+
+def full_Stop(s):
+    if '.' not in s[0:-1]:
+        if(s[-1] == '.' or '?' or '!'):
+            return True
+    else:
+        return False
+    
+def is_Valid(s):
+    if 
+if __name__ == "__main__":
+    pass
+    
