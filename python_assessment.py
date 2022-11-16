@@ -20,7 +20,7 @@ def fullStop(s):
 def qMarks(s):
     #adds up the number of " in the String and divides it by 2
     #Checks if there is any remainder in the division
-    if s.coutn('"') % 2 == 0:#
+    if s.count('"') % 2 == 0:
         return True
     else:
         return False
@@ -31,13 +31,19 @@ def containsNumber(s):
          
 #Checks if the string is valid by calling several functions
 def isValid(s):
-    if(capitalLetter(s) is True and fullStop(s) is True):
+    if(capitalLetter(s) is True and fullStop(s) is True and qMarks(s) is True and containsNumber(s) is False):
         print("That Statement is Valid")
     else: 
-        print("Invalid Staement")
+        print("That Statement is not Valid")
 
 
 
 if __name__ == "__main__":
-    print("Hello")
+    
+    s = 'the quick brown fox said “hello Mr lazy dog".'
+    print(f"Capital Letter: {capitalLetter(s)}")
+    print(f"Full Stop: {fullStop(s)}")
+    print(f"Qoutation Marks: {qMarks(s)}")
+    print(f"Contains Number: {containsNumber(s)}")
+    isValid(s)
     
