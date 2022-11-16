@@ -13,10 +13,10 @@ def capitalLetter(s):
 #also checks if there is more than 1 full stop
 def fullStop(s):
     if '.' not in s[0:-1]:
-        if(s[-1] == '.' or '?' or '!'):
+        if(s[-1] == '.' or s[-1] ==  '?'  or s[-1] ==  '!'):
             return True
-        else:
-            return False
+    else:
+        return False
     
 def qMarks(s):
     #adds up the number of " in the String and divides it by 2
@@ -26,7 +26,7 @@ def qMarks(s):
     else:
         return False
     
-    
+#Using regular expresion to check if string contains certain values    
 def containsNumber (s):
     numbers = bool(re.search('r, [1-9]|1[0-2]', s))
     return numbers
@@ -44,7 +44,7 @@ def isValid(s):
 if __name__ == "__main__":
    
     
-    s = 'One lazy dog is too few, 3 is too many.'
+    s = 'The quick brown fox said “hello Mr lazy dog”.'
     print(f"Capital Letter: {capitalLetter(s)}")
     print(f"Full Stop: {fullStop(s)}")
     print(f"Qoutation Marks: {qMarks(s)}")
