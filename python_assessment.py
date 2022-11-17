@@ -27,7 +27,7 @@ def qMarks(s):
         return False
     
 #Using regular expresion to check if string contains certain values    
-def containsNumber (s):
+def containsNumber(s):
     numbers = bool(re.search('r, [1-9]|1[0-2]', s))
     return numbers
     
